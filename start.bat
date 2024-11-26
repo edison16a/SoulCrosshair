@@ -13,7 +13,7 @@ python -m pip install --upgrade pip
 
 REM Install required packages
 echo Installing required Python packages (PyQt5 and watchdog)...
-pip install PyQt5 watchdog
+pip install PyQt5
 
 REM Run the configuration menu
 echo Opening configuration menu...
