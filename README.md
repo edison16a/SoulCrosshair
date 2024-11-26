@@ -45,9 +45,11 @@ After Downloading Unzip and run Start.bat (First Install Python 3.7+)
 <img width="919" alt="Screenshot 2024-11-25 at 8 27 29 PM" src="https://github.com/user-attachments/assets/0778248c-0d5f-4f94-8446-d42596964272">
 <img width="688" alt="Screenshot 2024-11-26 at 9 49 55 AM" src="https://github.com/user-attachments/assets/4fea2802-bbd7-46a7-b77a-307522e63673">
 <img width="1228" alt="Screenshot 2024-11-26 at 10 08 23 AM" src="https://github.com/user-attachments/assets/fb1eb0ec-bab7-423c-b390-c99bbf568f84">
-https://github.com/user-attachments/assets/3a7d81be-89f1-492b-82c8-47d3782c6a34
-https://github.com/user-attachments/assets/8fc44057-b4be-4b55-8184-dd0f650e8b8b
-https://github.com/user-attachments/assets/9ec93073-2e70-4cb3-b38c-2bb1a4827f20
+![Screen Recording 2024-11-26 at 10 05 21 AM](https://github.com/user-attachments/assets/bfe94997-6247-4c80-8ae3-171949a88490)
+![Screen Recording 2024-11-26 at 10 05 41 AM](https://github.com/user-attachments/assets/50c8c494-ddc7-4ce0-8cd0-dfb1965340ea)
+![Screen Recording 2024-11-26 at 10 05 41 AM](https://github.com/user-attachments/assets/50cf8fae-b467-40c7-8a59-86886716bd08)
+
+
 
 
 
