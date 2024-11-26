@@ -87,17 +87,17 @@ class SettingsMenu(QMainWindow):
         main_layout.addWidget(scale_slider)
 
         # Create Crosshair Button
-        create_button = QPushButton("Create Crosshair", self)
+        create_button = QPushButton("Open Crosshair Creator", self)
         create_button.clicked.connect(lambda: QDesktopServices.openUrl(QUrl("https://crosshair.themeta.gg/")))
         main_layout.addWidget(create_button)
 
         instructions_label = QLabel(self)
         instructions_label.setText(
-            "How To Use Custom Crosshair:\n"
-            "1. Create of find Crosshair\n"
-            "2. Download the file\n"
-            "3. Put it in this folder\n"
-            "4. Select it\n"
+            "How To Use Custom Crosshair Creator:\n"
+            "1. Create or find Crosshair\n"
+            "2. Download as png/jpg\n"
+            "3. Put it in this folder in crosshairs\n"
+            "4. Select it in the menu\n"
             "5. To End Crosshair Terminate Python"
         )
         instructions_label.setWordWrap(True)
@@ -130,13 +130,6 @@ class SettingsMenu(QMainWindow):
         self.config['scale'] = value
         label.setText(f"Scale: {value}%")
         save_config(self.config)  # Automatically save the configuration
-
-    def close_crosshair(self):
-        """Terminate the crosshair subprocess if running."""
-        if self.crosshair_process and self.crosshair_process.poll() is None:
-            self.crosshair_process.terminate()  # Gracefully terminate the process
-            self.crosshair_process.wait()      # Ensure the process has fully exited
-            print("Crosshair process terminated.")
 
     def save_config(self):
         save_config(self.config)
