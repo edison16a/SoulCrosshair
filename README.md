@@ -18,15 +18,25 @@ After Downloading Unzip and run Start.bat (First Install Python 3.7+)
 
 # Updates
 1.2.2 - Added 50 Crosshairs (Popular Ones) and Increase Scale (0-100) --> (0-1000)
+
 1.2.1 - Improved Crosshair Quality
+
 1.2.0 - Bug Fixes, Changed Default Config.json
+
 1.1.4 - Improved GUI For Windows
+
 1.1.3 - Added Crosshair Maker (Online)
+
 1.1.2 - Added Steps How To Use
+
 1.1.1 - Removed Save Button (Automatic Saving)
+
 1.1.0 - Removed Watchdog and used check/sec
+
 1.0.2 - Fixed Crosshair Crash Glitch
+
 1.0.1 - Added PyQt5 GUI To Edit Crosshair Scale + Image
+
 1.0.0 - Simple Crosshair Finished
 
 # Pictures
