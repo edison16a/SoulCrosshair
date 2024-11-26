@@ -16,7 +16,6 @@ Crosshair X Alternative Completely Customizable Built in Python
 
 <img width="203" alt="Screenshot 2024-11-25 at 8 26 24 PM" src="https://github.com/user-attachments/assets/86073436-b04f-41f8-9f01-73e3d145e5a9">
 <img width="986" alt="Screenshot 2024-11-25 at 8 26 40 PM" src="https://github.com/user-attachments/assets/ca57c2b6-1880-44e8-8153-e54bea5e71d8">
-<img width="20" alt="Screenshot 2024-11-25 at 8 27 18 PM" src="https://github.com/user-attachments/assets/f952b3d3-daab-452c-a53b-be4696869b9f">
 <img width="919" alt="Screenshot 2024-11-25 at 8 27 29 PM" src="https://github.com/user-attachments/assets/0778248c-0d5f-4f94-8446-d42596964272">
 
 
