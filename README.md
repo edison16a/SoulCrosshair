@@ -4,6 +4,7 @@ Use any Custom Crosshair With No Limitations!
 After Downloading Unzip and run Start.bat (First Install Python 3.7+)
 
 If you want to run without download python you can download the exe also located in this GitHub in the folder Executables
+Alternativly, download the exe folder only here --> https://github.com/edison16a/SoulCrosshairEXE/tree/main
 
 # How To Use
 1. Create of find Crosshair
