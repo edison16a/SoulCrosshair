@@ -3,6 +3,8 @@ Crosshair X Alternative Completely Customizable Built-in Python
 Use any Custom Crosshair With No Limitations!
 After Downloading Unzip and run Start.bat (First Install Python 3.7+)
 
+If you want to run without download python you can download the exe also located in this GitHub in the folder Executables
+
 # How To Use
 1. Create of find Crosshair
 2. Download the file
