@@ -10,8 +10,8 @@ Crosshair X Alternative Completely Customizable Built in Python
 6. To End Crosshair Terminate Python
 
 # Features
-1. 20 Pre-loaded Crosshairs
-2. Use any crosshair you want ranging from random photos to 10000+ Crosshairs in an online crosshair editor
+1. 50 Pre-loaded Crosshairs Included Popular Ones From Pros
+2. Use any crosshair you want ranging from random photos to 950000+ Possible Crosshairs in an online crosshair editor
 3. Scalable Crosshairs
 
 <img width="203" alt="Screenshot 2024-11-25 at 8 26 24 PM" src="https://github.com/user-attachments/assets/86073436-b04f-41f8-9f01-73e3d145e5a9">
