@@ -1,8 +1,23 @@
 # SoulCrosshair
 Crosshair X Alternative Completely Customizable Built in Python
 
-You can make any crosshair you want and download it as png
-It will overlay your whole screen
+# How To Use
+1. Create of find Crosshair
+2. Download the file
+3. Put it in this folder
+4. Select it
+5. Press Show/Start Crosshair
+6. To End Crosshair Terminate Python
 
-<img width="396" alt="Screenshot 2024-11-25 at 2 12 39 PM" src="https://github.com/user-attachments/assets/50a99644-9907-432c-a3d1-bebcc2c19cb7">
-<img width="602" alt="Screenshot 2024-11-25 at 2 13 03 PM" src="https://github.com/user-attachments/assets/e3501f35-b6c4-4466-b870-85eded5df9ed">
+# Features
+1. 20 Pre-loaded Crosshairs
+2. Use any crosshair you want ranging from random photos to 10000+ Crosshairs in an online crosshair editor
+3. Scalable Crosshairs
+
+<img width="203" alt="Screenshot 2024-11-25 at 8 26 24 PM" src="https://github.com/user-attachments/assets/86073436-b04f-41f8-9f01-73e3d145e5a9">
+<img width="986" alt="Screenshot 2024-11-25 at 8 26 40 PM" src="https://github.com/user-attachments/assets/ca57c2b6-1880-44e8-8153-e54bea5e71d8">
+<img width="20" alt="Screenshot 2024-11-25 at 8 27 18 PM" src="https://github.com/user-attachments/assets/f952b3d3-daab-452c-a53b-be4696869b9f">
+<img width="919" alt="Screenshot 2024-11-25 at 8 27 29 PM" src="https://github.com/user-attachments/assets/0778248c-0d5f-4f94-8446-d42596964272">
+
+
+
