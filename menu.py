@@ -81,7 +81,7 @@ class SettingsMenu(QMainWindow):
 
         scale_slider = QSlider(Qt.Horizontal, self)
         scale_slider.setMinimum(1)
-        scale_slider.setMaximum(100)
+        scale_slider.setMaximum(1000)
         scale_slider.setValue(self.config['scale'])
         scale_slider.valueChanged.connect(lambda: self.update_scale(scale_slider.value(), scale_label))
         main_layout.addWidget(scale_slider)
