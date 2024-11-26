@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>SoulCrosshair</string>
+	<key>CFBundleExecutable</key>
+	<string>SoulCrosshair</string>
+	<key>CFBundleIconFile</key>
+	<string>generated-217cd9b2d319206db7e5a09310ba3d71f66550f8d2b9c52dc1214d3e3810f1b9.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>SoulCrosshair</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>SoulCrosshair</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.0.0</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+</dict>
+</plist>
