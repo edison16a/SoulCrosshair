@@ -19,8 +19,4 @@ REM Run the configuration menu
 echo Opening configuration menu...
 python menu.py
 
-REM Run the live-updating Crosshair Display script
-echo Starting Crosshair Display...
-python live_crosshair_display.py
-
 pause

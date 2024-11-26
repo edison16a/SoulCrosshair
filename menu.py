@@ -122,7 +122,7 @@ class SettingsMenu(QMainWindow):
     def run_crosshair(self):
         """Launch crosshair.py as a separate process."""
         try:
-            subprocess.Popen(["python", "crosshair.py"])  # Adjust to "python" if using Windows or another Python version
+            subprocess.Popen(["python3", "crosshair.py"])  # Adjust to "python" if using Windows or another Python version
         except Exception as e:
             print(f"Error running crosshair.py: {e}")
 

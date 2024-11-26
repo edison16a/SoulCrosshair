@@ -1,17 +1,15 @@
 import sys
 import json
-import time
-from watchdog.observers import Observer
-from watchdog.events import FileSystemEventHandler
 from PyQt5.QtWidgets import QApplication, QLabel
 from PyQt5.QtCore import Qt, QTimer
 from PyQt5.QtGui import QPixmap
+import os
 
-# PyQt5 application
 class CrosshairWindow(QLabel):
     def __init__(self):
         super().__init__()
         self.config = {}
+        self.last_modified_time = 0  # Track last modification time
         self.load_config()
 
         # Load and display crosshair
@@ -22,6 +20,11 @@ class CrosshairWindow(QLabel):
         self.setAttribute(Qt.WA_TranslucentBackground, True)
         self.setAttribute(Qt.WA_NoSystemBackground, True)
         self.setAttribute(Qt.WA_X11DoNotAcceptFocus, True)
+
+        # Set up a timer to periodically check the configuration file
+        self.timer = QTimer()
+        self.timer.timeout.connect(self.check_config)
+        self.timer.start(1000)  # Check every 1000 milliseconds (1 second)
 
     def load_config(self):
         """Load the configuration file."""
@@ -62,17 +65,20 @@ class CrosshairWindow(QLabel):
             (screen_geometry.height() - self.height()) // 2,
         )
 
-# File change handler for Watchdog
-class ConfigFileHandler(FileSystemEventHandler):
-    def __init__(self, crosshair_window):
-        super().__init__()
-        self.crosshair_window = crosshair_window
-
-    def on_modified(self, event):
-        if event.src_path.endswith('config.json'):
-            print("config.json modified. Reloading...")
-            self.crosshair_window.load_config()
-            self.crosshair_window.update_crosshair()
+    def check_config(self):
+        """Check if the configuration file has changed and reload if necessary."""
+        try:
+            # Get the modification time of the config file
+            current_modified_time = os.path.getmtime('config.json')
+            if current_modified_time != self.last_modified_time:
+                self.last_modified_time = current_modified_time
+                print("config.json modified. Reloading...")
+                self.load_config()
+                self.update_crosshair()
+        except FileNotFoundError:
+            print("Error: config.json not found.")
+        except Exception as e:
+            print(f"Error checking config.json: {e}")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
@@ -81,15 +87,7 @@ if __name__ == "__main__":
     window = CrosshairWindow()
     window.show()
 
-    # Watchdog observer to monitor config.json
-    observer = Observer()
-    event_handler = ConfigFileHandler(window)
-    observer.schedule(event_handler, path='.', recursive=False)
-    observer.start()
-
     try:
         sys.exit(app.exec_())
     except KeyboardInterrupt:
         print("Exiting...")
-        observer.stop()
-    observer.join()
