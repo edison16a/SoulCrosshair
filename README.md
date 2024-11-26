@@ -19,7 +19,7 @@ If you want to run without download python you can download the exe also located
 3. Scalable Crosshairs
 
 # Updates
-1.3.0 - Crosshair Close on F2 + Label on Menu
+1.3.0 - Added Label on Menu (Final Version As Of Now)
 
 1.2.7 - Changed Default Crosshair
 
