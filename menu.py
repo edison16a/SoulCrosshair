@@ -93,7 +93,7 @@ class SettingsMenu(QMainWindow):
 
         instructions_label = QLabel(self)
         instructions_label.setText(
-            "How To Use Soul Crosshair:\n"
+            "How To Use Custom Crosshair:\n"
             "1. Create of find Crosshair\n"
             "2. Download the file\n"
             "3. Put it in this folder\n"
