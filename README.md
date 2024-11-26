@@ -58,6 +58,9 @@ If you want to run without download python you can download the exe also located
 <img width="986" alt="Screenshot 2024-11-25 at 8 26 40 PM" src="https://github.com/user-attachments/assets/ca57c2b6-1880-44e8-8153-e54bea5e71d8">
 <img width="919" alt="Screenshot 2024-11-25 at 8 27 29 PM" src="https://github.com/user-attachments/assets/0778248c-0d5f-4f94-8446-d42596964272">
 <img width="688" alt="Screenshot 2024-11-26 at 9 49 55 AM" src="https://github.com/user-attachments/assets/4fea2802-bbd7-46a7-b77a-307522e63673">
+<img width="684" alt="Screenshot 2024-11-26 at 2 08 42 PM" src="https://github.com/user-attachments/assets/1954b95d-8fba-458f-97c8-5cca01664e34">
+<img width="684" alt="Screenshot 2024-11-26 at 2 08 46 PM" src="https://github.com/user-attachments/assets/97901bad-602c-48d4-8170-3b2f9bb26896">
+<img width="674" alt="Screenshot 2024-11-26 at 2 08 52 PM" src="https://github.com/user-attachments/assets/b0258859-e4d5-4499-b26e-d42d478f6083">
 <img width="1228" alt="Screenshot 2024-11-26 at 10 08 23 AM" src="https://github.com/user-attachments/assets/fb1eb0ec-bab7-423c-b390-c99bbf568f84">
 
 
