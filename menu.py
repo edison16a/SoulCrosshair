@@ -1,5 +1,6 @@
 import sys
 import json
+import os
 from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import QMainWindow, QVBoxLayout, QLabel, QSlider, QPushButton, QFileDialog, QWidget
 from PyQt5.QtCore import Qt, QUrl
@@ -24,7 +25,7 @@ class SettingsMenu(QMainWindow):
     def __init__(self):
         super().__init__(None, Qt.FramelessWindowHint)
         self.setWindowTitle("Soul Crosshair")
-        self.setFixedSize(400, 430)
+        self.setFixedSize(400, 480)
         self.config = load_config()
         self.drag_pos = None
 
@@ -65,7 +66,7 @@ class SettingsMenu(QMainWindow):
         main_layout.addWidget(title_label)
 
         # Crosshair file picker
-        file_label = QLabel(f"Crosshair File: {self.config['crosshair']}", self)
+        file_label = QLabel(f"Crosshair File: {os.path.basename(self.config['crosshair'])}", self)
         file_label.setAlignment(Qt.AlignCenter)
         main_layout.addWidget(file_label)
 
@@ -90,18 +91,29 @@ class SettingsMenu(QMainWindow):
         create_button.clicked.connect(lambda: QDesktopServices.openUrl(QUrl("https://crosshair.themeta.gg/")))
         main_layout.addWidget(create_button)
 
-        run_button = QPushButton("Run Crosshair", self)
+        instructions_label = QLabel(self)
+        instructions_label.setText(
+            "How To Use Soul Crosshair:\n"
+            "1. Create of find Crosshair\n"
+            "2. Download the file\n"
+            "3. Put it in this folder\n"
+            "4. Select it\n"
+            "5. To End Crosshair Terminate Python"
+        )
+        instructions_label.setWordWrap(True)
+        instructions_label.setAlignment(Qt.AlignCenter)
+        main_layout.addWidget(instructions_label)
+
+        run_button = QPushButton("Show/Start Crosshair", self)
         run_button.clicked.connect(self.run_crosshair)
         main_layout.addWidget(run_button)
 
         # Save and Close Buttons
         button_layout = QVBoxLayout()
-        save_button = QPushButton("Save", self)
-        save_button.clicked.connect(self.save_config)
-        button_layout.addWidget(save_button)
 
-        close_button = QPushButton("Close", self)
-        close_button.clicked.connect(self.close)
+
+        close_button = QPushButton("Close Menu", self)
+        close_button.clicked.connect(lambda: (self.close_crosshair(), self.close()))
         button_layout.addWidget(close_button)
 
         main_layout.addLayout(button_layout)
@@ -110,11 +122,21 @@ class SettingsMenu(QMainWindow):
         file_path, _ = QFileDialog.getOpenFileName(self, "Select Crosshair File", "", "Image Files (*.png *.jpg *.bmp)")
         if file_path:
             self.config['crosshair'] = file_path
-            label.setText(f"Crosshair File: {file_path}")
+            label.setText(f"Crosshair File: {os.path.basename(file_path)}")
+            save_config(self.config)  # Automatically save the configuration
+
 
     def update_scale(self, value, label):
         self.config['scale'] = value
         label.setText(f"Scale: {value}%")
+        save_config(self.config)  # Automatically save the configuration
+
+    def close_crosshair(self):
+        """Terminate the crosshair subprocess if running."""
+        if self.crosshair_process and self.crosshair_process.poll() is None:
+            self.crosshair_process.terminate()  # Gracefully terminate the process
+            self.crosshair_process.wait()      # Ensure the process has fully exited
+            print("Crosshair process terminated.")
 
     def save_config(self):
         save_config(self.config)
@@ -122,7 +144,7 @@ class SettingsMenu(QMainWindow):
     def run_crosshair(self):
         """Launch crosshair.py as a separate process."""
         try:
-            subprocess.Popen(["python3", "crosshair.py"])  # Adjust to "python" if using Windows or another Python version
+            subprocess.Popen(["python", "crosshair.py"])  # Adjust to "python" if using Windows or another Python version
         except Exception as e:
             print(f"Error running crosshair.py: {e}")
 
