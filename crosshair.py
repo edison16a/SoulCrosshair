@@ -1,8 +1,8 @@
 import sys
 import json
-from PyQt5.QtWidgets import QApplication, QLabel
+from PyQt5.QtWidgets import QApplication, QLabel, QShortcut
 from PyQt5.QtCore import Qt, QTimer
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QKeySequence
 import os
 
 class CrosshairWindow(QLabel):
@@ -25,6 +25,10 @@ class CrosshairWindow(QLabel):
         self.timer = QTimer()
         self.timer.timeout.connect(self.check_config)
         self.timer.start(1000)  # Check every 1000 milliseconds (1 second)
+
+        # Set up a shortcut for quitting the application
+        self.quit_shortcut = QShortcut(QKeySequence("F2"), self)
+        self.quit_shortcut.activated.connect(self.quit_application)
 
     def load_config(self):
         """Load the configuration file."""
@@ -79,6 +83,11 @@ class CrosshairWindow(QLabel):
             print("Error: config.json not found.")
         except Exception as e:
             print(f"Error checking config.json: {e}")
+
+    def quit_application(self):
+        """Quit the application when F2 is pressed."""
+        print("F2 pressed. Exiting application...")
+        QApplication.quit()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

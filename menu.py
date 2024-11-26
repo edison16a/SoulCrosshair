@@ -25,7 +25,7 @@ class SettingsMenu(QMainWindow):
     def __init__(self):
         super().__init__(None, Qt.FramelessWindowHint)
         self.setWindowTitle("Soul Crosshair")
-        self.setFixedSize(400, 480)
+        self.setFixedSize(400, 510)
         self.config = load_config()
         self.drag_pos = None
 
@@ -107,6 +107,12 @@ class SettingsMenu(QMainWindow):
         run_button = QPushButton("Show/Start Crosshair", self)
         run_button.clicked.connect(self.run_crosshair)
         main_layout.addWidget(run_button)
+
+        hideme_label = QLabel(f"Press F2 To Hide Crosshair", self)
+        hideme_label.setAlignment(Qt.AlignCenter)
+        main_layout.addWidget(hideme_label)
+
+
 
         # Save and Close Buttons
         button_layout = QVBoxLayout()
