@@ -1,4 +1,4 @@
-# SoulCrosshair Ver 1.2.2
+# SoulCrosshair Ver 1.2.4
 Crosshair X Alternative Completely Customizable Built-in Python
 Use any Custom Crosshair With No Limitations!
 After Downloading Unzip and run Start.bat (First Install Python 3.7+)
@@ -19,6 +19,10 @@ If you want to run without download python you can download the exe also located
 3. Scalable Crosshairs
 
 # Updates
+1.2.4 - Added Windows Build
+
+1.2.3 - Added Mac Build
+
 1.2.2 - Added 50 Crosshairs (Popular Ones) and Increase Scale (0-100) --> (0-1000)
 
 1.2.1 - Improved Crosshair Quality
