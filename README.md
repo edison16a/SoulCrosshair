@@ -61,6 +61,8 @@ Alternatively, download the exe folder only here --> https://github.com/edison16
 <img width="684" alt="Screenshot 2024-11-26 at 2 08 42 PM" src="https://github.com/user-attachments/assets/1954b95d-8fba-458f-97c8-5cca01664e34">
 <img width="684" alt="Screenshot 2024-11-26 at 2 08 46 PM" src="https://github.com/user-attachments/assets/97901bad-602c-48d4-8170-3b2f9bb26896">
 <img width="674" alt="Screenshot 2024-11-26 at 2 08 52 PM" src="https://github.com/user-attachments/assets/b0258859-e4d5-4499-b26e-d42d478f6083">
+<img width="660" alt="Screenshot 2024-11-26 at 4 21 54 PM" src="https://github.com/user-attachments/assets/ef8962e0-41b3-463b-9fd6-a4ebd0f2e94a">
+
 <img width="1228" alt="Screenshot 2024-11-26 at 10 08 23 AM" src="https://github.com/user-attachments/assets/fb1eb0ec-bab7-423c-b390-c99bbf568f84">
 
 
